@@ -1,1 +1,35 @@
-Hello World
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Калькулятор</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+
+    </head>
+    <body>
+        <div class="container">
+        <div class="item display"><form name="form"><input type="text"
+             name="textview" readonly></form></div>
+        <button class="item topbut" onclick="clean()">AC</button>
+        <button class="item topbut"onclick="plusmin()">+/-</button>
+        <button class="item topbut">%</button>
+        <button class="item vertbut" onclick="insert('/')">&divide;</button>
+        <button class="item" onclick="insert('7')">7</button>
+        <button class="item" onclick="insert('8')">8</button>
+        <button class="item" onclick="insert('9')">9</button>
+        <button class="item vertbut" onclick="insert('*')">&times;</button>
+        <button class="item" onclick="insert('4')">4</button>
+        <button class="item" onclick="insert('5')">5</button>
+        <button class="item" onclick="insert('6')">6</button>
+        <button class="item vertbut" onclick="insert('-')">-</button>
+        <button class="item" onclick="insert('1')">1</button>
+        <button class="item" onclick="insert('2')">2</button>
+        <button class="item" onclick="insert('3')">3</button>
+        <button class="item vertbut" onclick="insert('+')">+</button>
+        <button class="item zero" onclick="insert('0')">0</button>
+        <button class="item" onclick="insert('.')">,</button>
+        <button class="item vertbut" onclick="result()">=</button>
+        </div>
+        
+    </body>
+</html>

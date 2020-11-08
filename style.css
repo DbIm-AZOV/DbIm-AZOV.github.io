@@ -1,0 +1,87 @@
+body {    
+    background-color: rgb(248, 246, 246);
+    user-select: none; 
+    display: flex;
+    flex-flow: nowrap;
+    
+}
+.container {
+    background-color: rgb(0, 0, 0);    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;  
+    
+    
+    height: 425px ;
+    
+    padding: 2px;
+    max-width: 260px; 
+    
+    
+    }
+form{
+    max-width: 100%;
+}
+input{
+    
+    width: 100%;
+    height: 100px;
+    border: none;
+    font-size: 30px;
+    outline: none;
+    text-align: right;
+    background-color: black;
+    color: white;
+}
+.item {
+
+    
+    color: white;
+    background-color: rgb(20, 20, 20);
+    border-radius:  50%;
+    border: none;
+   
+    padding: 20px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 2px;
+    font-weight: bold;
+}
+.display{
+    
+    width: 100%;
+    height: 100px;
+    min-height: 20%;
+    flex-direction: row;
+    flex-grow: 1 ;
+    padding: 0;
+    color: white;
+    background-color: black;
+}
+.topbut{
+    padding: 20px;
+    
+    color: black;
+    background-color: rgb(102, 100, 97);
+    
+    
+}
+.vertbut{
+    
+    background-color: rgb(231, 159, 3);
+    
+}
+.zero{
+    flex-grow: 0.6;
+    justify-content: left;
+    border-radius: 40%;
+}
+
