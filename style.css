@@ -1,5 +1,5 @@
 body {    
-    background-color: rgb(248, 246, 246);
+    background-color: black;
     user-select: none; 
     display: flex;
     flex-flow: nowrap;
@@ -28,7 +28,7 @@ form{
 }
 input{
     
-    width: 90vw;
+    width: 91.5vw;
     height: 40vw;
     border: none;
     font-size: 20vw;
