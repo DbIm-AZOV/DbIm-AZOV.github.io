@@ -1,21 +1,45 @@
+let item=""  ;
+firstnum="",
+secondnum="",
+resultnum="";
+
+function percent(){
+    item=eval(item)/100;
+    resultitem();
+}
+
+function resultitem(){
+document.form.textview.value=item;}
 
 function insert(num){
+    if (item == 0)  {
+        item="";
+        item+=num;
+        resultitem();
+    } else
     
-    document.form.textview.value+=num; 
-    item= document.form.textview.value;
+    item+=num; 
+    resultitem()
 }
 function clean(){
-    document.form.textview.value="";
+    item="0";
+    resultitem();
+    
 }
 function plusmin(){
     
-    document.form.textview.value.indexOf("-") == 0?
-    document.form.textview.value=document.form.textview.value.replace('-',''):
-    document.form.textview.value="-"+ document.form.textview.value;
+    item.indexOf("-") == 0?
+    item=item.replace('-',''):
+    item="-"+ item;
+    resultitem()
 }
 function result(){
-    if(document.form.textview.value){
-        document.form.textview.value= eval(document.form.textview.value);
+
+    if(item){
+        item= eval(item);
+        resultnum=item;
     }
+   
+    resultitem()
     
 }
